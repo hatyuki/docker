@@ -50,3 +50,7 @@ services:
 volumes:
   db:
   nextcloud:
+    driver_opts:
+    type: nfs
+    o: "addr=127.0.0.1,rw,nfsvers=4"
+    device: ":/export/Data"
