@@ -55,6 +55,7 @@ volumes:
   nextcloud:
   data:
     driver_opts:
-      type: nfs
-      o: "addr=127.0.0.1,rw,nfsvers=4"
-      device: ":/export/Data"
+      type: none
+      device: /export/Data
+      o: bind
+
