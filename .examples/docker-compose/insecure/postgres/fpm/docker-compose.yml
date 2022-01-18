@@ -56,6 +56,6 @@ volumes:
   data:
     driver_opts:
       type: none
-      device: /export/Data
+      device: /mnt/nextcloud
       o: bind
 
